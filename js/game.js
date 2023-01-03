@@ -3,16 +3,16 @@ const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 
 const characters = [
-  'beth',
-  'jerry',
-  'jessica',
-  'morty',
-  'pessoa-passaro',
-  'pickle-rick',
-  'rick',
-  'summer',
-  'meeseeks',
-  'scroopy',
+  'descobrimento',
+  'colonia',
+  'independencia',
+  'primeiro_reinado',
+  'segundo_reinado',
+  'primeira_republica',
+  'revolucao_1930',
+  'era_vargas',
+  'ditadura',
+  'pos_ditadura',
 ];
 
 const createElement = (tag, className) => {
@@ -79,7 +79,7 @@ const revealCard = ({ target }) => {
 
     checkCards();
 
-  }  
+  }
 }
 
 const createCard = (character) => {
@@ -100,7 +100,7 @@ const createCard = (character) => {
 }
 
 const loadGame = () => {
-  const duplicateCharacters = [ ...characters, ...characters ];
+  const duplicateCharacters = [...characters, ...characters];
 
   const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5);
 
