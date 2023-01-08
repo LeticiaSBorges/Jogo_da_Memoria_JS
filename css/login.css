@@ -1,3 +1,4 @@
+/* estilizando o from do login */
 .login-form {
   align-items: center;
   display: flex;
@@ -6,6 +7,7 @@
   justify-content: center;
 }
 
+/* estilizando a imagem do login */
 .login__header {
   align-items: center;
   display: flex;
@@ -23,6 +25,7 @@
   font-size: 1.5em;
 }
 
+/*estilizando o input (entrada do nome do jogador)*/
 .login__input {
   border: 2px solid #333;
   border-radius: 8px;
@@ -35,6 +38,7 @@
   width: 100%;
 }
 
+/*estilizando o botão do input (entrada do nome do jogador)*/
 .login__button {
   background-color: #ee665c;
   border-radius: 8px;
@@ -46,6 +50,7 @@
   width: 100%;
 }
 
+/*estilizando o botão do input enquanto ele está desabilitado*/
 .login__button:disabled {
   background-color: #eee;
   color: #aaa;
