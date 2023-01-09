@@ -64,10 +64,12 @@ header {
   backface-visibility: hidden; /* quando vira a carta escode o face */
 }
 
+/* vira a carta a 180 graus */
 .reveal-card {
   transform: rotateY(180deg);
 }
 
+/* deixa a carta transparente */
 .disabled-card {
   filter: saturate(0);
   opacity: 0.5;
