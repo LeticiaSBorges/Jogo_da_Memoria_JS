@@ -16,7 +16,7 @@ const characters = [
   'pos_ditadura',
 ];
 
-/*Cria os elementos  da tag. Está função ajuda na criação das cartas (linha 117)*/
+/*Cria os elementos  da tag. Está função ajuda na criação das cartas (linha 119)*/
 const createElement = (tag, className) => {
   const element = document.createElement(tag);
   element.className = className;
