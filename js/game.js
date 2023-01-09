@@ -32,13 +32,15 @@ const checkEndGame = () => {
   /* procura todos os elementos da clase disabledCards */
   const disabledCards = document.querySelectorAll('.disabled-card');
 
-  /* se o tamanho do disableCard é igual 20 aparece uma mensagem que acabou o jogo */
+  /* se o tamanho do disableCard é igual 20 para o loop do tempo e 
+  aparece uma mensagem que acabou o jogo */
   if (disabledCards.length === 20) {
     clearInterval(this.loop);
-    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
+    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML} secundos.`);
   }
 }
 
+/* Verifica os cards */
 const checkCards = () => {
   const firstCharacter = firstCard.getAttribute('data-character');
   const secondCharacter = secondCard.getAttribute('data-character');
@@ -147,6 +149,9 @@ const loadGame = () => {
   });
 }
 
+/* Conta o tempo.
+começa ac contar tempo do valor incial (00) e soma mais 1 em loop
+*/
 const startTimer = () => {
 
   this.loop = setInterval(() => {
@@ -156,6 +161,11 @@ const startTimer = () => {
 
 }
 
+/* Carrega o gamer depois que a janela estiver carregada 
+spanPlayer.innerHTML = localStorage.getItem('player'): recupera o valor digitado;
+startTimer(): chama a função startTimer;
+loadGame(): chama a função loadGame;
+*/
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');
   startTimer();
