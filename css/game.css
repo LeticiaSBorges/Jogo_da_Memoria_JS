@@ -23,6 +23,7 @@ header {
   border-radius: 5px;
 }
 
+/*estilizando o grid*/
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -32,13 +33,14 @@ header {
   margin: 0 auto;
 }
 
+/*estilizando o card*/
 .card {
   aspect-ratio: 3/4;
   width: 100%;
   border-radius: 5px;
   position: relative;
-  transition: all 400ms ease;
-  transform-style: preserve-3d;
+  transition: all 400ms ease; /* rotaciona a carta */
+  transform-style: preserve-3d; /* amimação 3d */
   background-color: #ccc;
 }
 
@@ -54,12 +56,12 @@ header {
 }
 
 .front {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* rotaciona a carta (inverte) */
 }
 
 .back {
   background-image: url('../images/back.png');
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* quando vira a carta escode o face */
 }
 
 .reveal-card {

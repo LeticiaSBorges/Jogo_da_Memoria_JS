@@ -82,6 +82,7 @@ const revealCard = ({ target }) => {
   }
 }
 
+/*  */
 const createCard = (character) => {
 
   const card = createElement('div', 'card');
